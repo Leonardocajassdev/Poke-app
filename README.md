@@ -68,7 +68,7 @@ lib/
 ### Paso 1: Clonar el Repositorio
 
 ```bash
-git clone 
+git https://github.com/Leonardocajassdev/Poke-app.git
 cd pokemon_app_bodytech
 ```
 
@@ -90,12 +90,6 @@ flutter pub get
    - Package name: `com.bodytech.pokemon_app_bodytech`
    - Descarga `google-services.json`
    - Colócalo en `android/app/`
-
-3. **Configurar iOS** (Opcional)
-   - En Firebase Console, añade una app iOS
-   - Bundle ID: `com.bodytech.pokemonAppBodytech`
-   - Descarga `GoogleService-Info.plist`
-   - Colócalo en `ios/Runner/`
 
 4. **Instalar FlutterFire CLI** (Recomendado)
    ```bash
