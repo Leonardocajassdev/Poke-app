@@ -1,5 +1,7 @@
 # Pokémon App - Prueba Técnica Bodytech
 
+Flutter · Firebase · GetX · Hive · Dio
+
 Aplicación móvil desarrollada en Flutter que implementa un sistema completo de autenticación con Firebase, consumo de API REST (PokéAPI), persistencia local con Hive y gestión de estado con GetX.
 
 ##  Características
@@ -68,11 +70,11 @@ lib/
 ### Paso 1: Clonar el Repositorio
 
 ```bash
-git https://github.com/Leonardocajassdev/Poke-app.git
+git clone https://github.com/Leonardocajassdev/Poke-app.git
 cd pokemon_app_bodytech
 ```
 
-### Paso 3: Instalar Dependencias
+### Paso 2: Instalar Dependencias
 
 ```bash
 flutter pub get
@@ -91,11 +93,18 @@ flutter pub get
    - Descarga `google-services.json`
    - Colócalo en `android/app/`
 
-4. **Instalar FlutterFire CLI** (Recomendado)
+3. **Instalar FlutterFire CLI** (Recomendado)
    ```bash
    dart pub global activate flutterfire_cli
-   flutterfire configure
+   flutterfire configure 'selecciona tu app'
    ```
+
+   Durante el proceso: 
+    Selecciona el proyecto de Firebase
+    Selecciona la app Android creada
+
+   Este comando generará el archivo: 'lib/firebase_options.dart'
+
 
 ### Paso 4: Generar Código Hive
 
@@ -103,9 +112,10 @@ flutter pub get
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-### Paso 5: Ejecutar la Aplicación
+### Paso 5: Limpiar y ejecutar la Aplicación
 
 ```bash
+flutter clean
 flutter run
 ```
 
@@ -122,6 +132,15 @@ dependencies:
   connectivity_plus: ^5.0.2        # Network connectivity
   cached_network_image: ^3.3.1     # Image caching
 ```
+
+### Archivos no incluidos en el repositorio
+
+Por razones de seguridad, los siguientes archivos no están versionados:
+
+- `android/app/google-services.json`
+- `ios/Runner/GoogleService-Info.plist`
+- `lib/firebase_options.dart`
+
 
 ## Funcionalidades Implementadas
 
