@@ -1,0 +1,41 @@
+name: pokemon_app_bodytech
+description: Prueba técnica Flutter para Bodytech - App con Firebase Auth, GetX y Hive
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management & Navigation
+  get: ^4.6.6
+
+  # Firebase (VERSIONES ESTABLES - SIN BUG)
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.4
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # HTTP Client
+  dio: ^5.4.0
+
+  # Utils
+  connectivity_plus: ^5.0.2
+  cached_network_image: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
